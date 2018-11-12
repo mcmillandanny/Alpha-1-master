@@ -225,7 +225,7 @@ GameObject:
   m_Layer: 0
   m_Name: Ground Check
   m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -650,7 +650,8 @@ Prefab:
       propertyPath: rightPoint
       value: 
       objectReference: {fileID: 736628495}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114583154997691152, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &736628495
@@ -664,7 +665,7 @@ GameObject:
   m_Layer: 0
   m_Name: RightPoint
   m_TagString: RightPoint
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -675,7 +676,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 736628495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61, y: -3.24, z: 1.0414964}
+  m_LocalPosition: {x: 5.79, y: 0.2, z: 1.0414964}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1148,10 +1149,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1456889651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 216124fac24a19c4dac561658c21e1c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 24a673b42574a410aa70ff6c7e36bc91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1356925300860838, guid: ea41025e3ad4ca342a022789d0d1f45a, type: 2}
+  projectile: {fileID: 1356925300860838, guid: dec52ebf33f309044b07fb9ed9938ac2, type: 2}
   shotPoint: {fileID: 317338785}
   startTimeBtwShots: 0.25
 --- !u!1 &1474952468
@@ -1165,7 +1166,7 @@ GameObject:
   m_Layer: 0
   m_Name: LeftPoint
   m_TagString: LeftPoint
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1176,7 +1177,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1474952468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.57, y: -3.31, z: 0.80680597}
+  m_LocalPosition: {x: -6.71, y: -1.74, z: 0.80680597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1192,7 +1193,7 @@ GameObject:
   - component: {fileID: 1639506407}
   - component: {fileID: 1639506408}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,7 +1259,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 15
+  m_MaxValue: 25
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
@@ -1415,6 +1416,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1237192368721016, guid: 6e43b6517b2db60439f803a713959deb,
     type: 2}
   m_PrefabInternal: {fileID: 631428500}
+--- !u!114 &1842672960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842672959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a8e0af554f449986d09e98ea57fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+  explosion: {fileID: 1859252235914456, guid: 892a188cdbaf3694c91d0e0a11f4f4f3, type: 2}
+  healthBar: {fileID: 1639506408}
+  firewall: {fileID: 1316827406165346, guid: 8da43a58044689d49a6ee26532210af9, type: 2}
+  startTimeBtwFireWalls: 2.3
+  leftPoint: {fileID: 1474952468}
+  rightPoint: {fileID: 736628495}
 --- !u!50 &1842672965
 Rigidbody2D:
   serializedVersion: 4
