@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
     private int extraJumps;
 
 
+    public Animator animator;
+
 
     private void Start()
     {
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour {
             extraJumps = extraJumpsValue;
         }
 
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         if(Input.GetKeyDown(KeyCode.W) && extraJumps > 0){
             rb.velocity = Vector2.up * jump;
