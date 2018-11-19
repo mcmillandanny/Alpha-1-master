@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a49b1b002491452ea5a8a8aa7170167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startShootingDistance: 0.25
+  startShootingDistance: 5
   explosion: {fileID: 1563250744852880, guid: 7a706e7806f0742cfb79dbd825a54bf4, type: 2}
   startTimeBtwShots: 2
   EnemyBullet: {fileID: 1542315181611192, guid: 10879810f0207475bb1cc2fcf7214620,
