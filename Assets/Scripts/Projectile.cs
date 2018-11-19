@@ -11,10 +11,12 @@ public class Projectile : MonoBehaviour
     public int damage;
     public LayerMask bossLayer;
 
+
     // Use this for initialization
     void Start()
     {
         Invoke("DestroyProjectile", lifeTime);
+        PlayerController player = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -32,7 +34,18 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        if (!PlayerController.facingRight()){
+            Debug.Log("right");
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        }
+
+        else
+        {
+            Debug.Log("left");
+            transform.Translate(-Vector2.right * speed * Time.deltaTime);
+        }
+
+       
     }
 
     void DestroyProjectile()

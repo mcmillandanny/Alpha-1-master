@@ -30,15 +30,14 @@ public class Boss : MonoBehaviour {
 
         healthBar.value = health;
 
-        if (health <= 20){
-
+        if (health <= 50){
             gameObject.transform.position = leftPoint.transform.position;
 
         }
 
 
 
-        if (health <= 15){
+        if (health <= 30){
 
             if (timeBtwFireWalls <= 0){
                 Instantiate(firewall, transform.position, Quaternion.identity);
@@ -49,12 +48,25 @@ public class Boss : MonoBehaviour {
         }
 
 
-        if (health <= 6) {
+        if (health <=25) {
             gameObject.transform.position = rightPoint.transform.position;
         }
 
 
 
+        if (health <= 10)
+        {
+
+            if (timeBtwFireWalls <= 0)
+            {
+                Instantiate(firewall, transform.position, Quaternion.identity);
+                timeBtwFireWalls = startTimeBtwFireWalls;
+            }
+            else
+            {
+                timeBtwFireWalls -= Time.deltaTime;
+            }
+        }
 
 
         if (health <= 0){
