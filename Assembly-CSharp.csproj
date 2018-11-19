@@ -61,11 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AddController.cs" />
     <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\BossFight.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\DeathZone.cs" />
+    <Compile Include="Assets\Scripts\enemyAttack.cs" />
     <Compile Include="Assets\Scripts\Firewall.cs" />
     <Compile Include="Assets\Scripts\GravitySwap.cs" />
     <Compile Include="Assets\Scripts\GravitySwitch.cs" />

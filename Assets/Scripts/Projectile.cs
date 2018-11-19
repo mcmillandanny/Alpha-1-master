@@ -37,6 +37,16 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
+        if (hitInfo.collider != null)
+        {
+            if (hitInfo.collider.CompareTag("Add"))
+            {
+                hitInfo.collider.GetComponent<AddController>().TakeDamage(damage);
+            }
+            DestroyProjectile();
+        }
+
+
         if (!player.facingRight){
             Debug.Log("right");
             transform.Translate(Vector2.right * speed * Time.deltaTime);

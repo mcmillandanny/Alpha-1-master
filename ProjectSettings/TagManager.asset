@@ -8,6 +8,7 @@ TagManager:
   - LeftPoint
   - Boss
   - Enemy
+  - Add
   layers:
   - Default
   - TransparentFX
