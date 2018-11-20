@@ -664,7 +664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1237192368721016, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4065281660386326, guid: 6e43b6517b2db60439f803a713959deb, type: 2}
       propertyPath: m_LocalScale.x
@@ -932,6 +932,10 @@ Prefab:
     - target: {fileID: 1146211740104714, guid: e861fdf703004489091387a5a202a6af, type: 2}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974677063493224, guid: e861fdf703004489091387a5a202a6af, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e861fdf703004489091387a5a202a6af, type: 2}
