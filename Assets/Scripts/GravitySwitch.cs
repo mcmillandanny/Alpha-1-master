@@ -8,7 +8,7 @@ public class GravitySwitch : MonoBehaviour {
     private bool top;
     private PlayerController player;
     public Animator animator;
-
+    
     private void Start()
     {
         player = GetComponent<PlayerController>();
@@ -30,15 +30,18 @@ public class GravitySwitch : MonoBehaviour {
 
 
     void Rotation(){
-        if (top == false) {
-            transform.eulerAngles = new Vector3(0, -180f, 180f);
-        } else {
-            transform.eulerAngles = new Vector3(0, 180f, 0);
-        }
-        player.facingRight = !player.facingRight; 
+       
+    
         top = !top;
+        Flip();
     }
 
+    void Flip()
+    {
+        Vector3 Scaler = transform.localScale;
+        Scaler.y *= -1;
+        transform.localScale = Scaler;
+    }
 
 }
 
