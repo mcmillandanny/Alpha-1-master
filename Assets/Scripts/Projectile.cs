@@ -10,11 +10,16 @@ public class Projectile : MonoBehaviour
     public float distance;
     public int damage;
     public LayerMask bossLayer;
+    public PlayerController player;
+
 
     // Use this for initialization
     void Start()
     {
         Invoke("DestroyProjectile", lifeTime);
+        GameObject playerObj = GameObject.Find("Player");
+        player = playerObj.GetComponent<PlayerController>();
+ 
     }
 
     // Update is called once per frame
@@ -32,7 +37,28 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        if (hitInfo.collider != null)
+        {
+            if (hitInfo.collider.CompareTag("Add"))
+            {
+                hitInfo.collider.GetComponent<AddController>().TakeDamage(damage);
+            }
+            DestroyProjectile();
+        }
+
+
+        if (!player.facingRight){
+            Debug.Log("right");
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        }
+
+        else
+        {
+            Debug.Log("left");
+            transform.Translate(-Vector2.right * speed * Time.deltaTime);
+        }
+
+       
     }
 
     void DestroyProjectile()

@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour {
     private float moveInput;
 
     private Rigidbody2D rb;
-
     public bool facingRight = true;
+
 
     private bool isGrounded;
 
@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour {
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
-    }
+
+}
 
     private void FixedUpdate()
     {
@@ -42,10 +43,12 @@ public class PlayerController : MonoBehaviour {
 
         if (facingRight == false && moveInput > 0)
         {
+
             Flip();
         }
         else if (facingRight == true && moveInput < 0)
         {
+
             Flip();
         }
     }
