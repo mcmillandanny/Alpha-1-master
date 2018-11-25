@@ -214,6 +214,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &162701701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -7.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.110743634
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962922954963092, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 571fe2251608148298ecf29687d8aedd, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &261125536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65a8e0af554f449986d09e98ea57fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 40
   explosion: {fileID: 1859252235914456, guid: 892a188cdbaf3694c91d0e0a11f4f4f3, type: 2}
   healthBar: {fileID: 1639506408}
   firewall: {fileID: 1316827406165346, guid: 8da43a58044689d49a6ee26532210af9, type: 2}

@@ -11,6 +11,8 @@ public class Projectile : MonoBehaviour
     public int damage;
     public LayerMask bossLayer;
     public PlayerController player;
+    public GameObject particle;
+    public float partileLifeTime = 2f;
 
 
     // Use this for initialization

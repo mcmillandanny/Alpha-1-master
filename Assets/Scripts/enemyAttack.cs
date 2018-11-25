@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemyAttack : MonoBehaviour {
 
     public float speed;
     private Transform player;
     private Vector2 target;
+    public GameObject bulletDeathRespawn;
+
+
+
 
     // Use this for initialization
     void Start()
@@ -22,6 +27,7 @@ public class enemyAttack : MonoBehaviour {
 
         if (transform.position.x == target.x)
         {
+
             DestroyEnemyAttack();
         }
     }
@@ -30,6 +36,8 @@ public class enemyAttack : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
+            other.transform.position = bulletDeathRespawn.transform.position;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             DestroyEnemyAttack();
         }
     }

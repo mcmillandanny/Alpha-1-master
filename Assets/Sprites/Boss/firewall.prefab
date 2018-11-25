@@ -79,6 +79,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  bulletDeathRespawn: {fileID: 1697618803589190, guid: 571fe2251608148298ecf29687d8aedd,
+    type: 2}
 --- !u!212 &212802778275834254
 SpriteRenderer:
   m_ObjectHideFlags: 1
