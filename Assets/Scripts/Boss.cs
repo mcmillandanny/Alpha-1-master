@@ -31,6 +31,7 @@ public class Boss : MonoBehaviour {
         healthBar.value = health;
 
         if (health <= 30){
+            transform.localEulerAngles = new Vector3(0f, 180f, 0f);
             gameObject.transform.position = leftPoint.transform.position;
 
         }
@@ -49,6 +50,7 @@ public class Boss : MonoBehaviour {
 
 
         if (health <= 20) {
+            transform.localEulerAngles = new Vector3(0f, 0f, 0f);
             gameObject.transform.position = rightPoint.transform.position;
         }
 
@@ -80,4 +82,5 @@ public class Boss : MonoBehaviour {
     public void TakeDamage(int damage){
         health -= damage;
     }
+
 }
