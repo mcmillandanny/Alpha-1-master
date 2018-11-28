@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - Enemy
   - Add
+  - Kill Screen
+  - Death Manager
   layers:
   - Default
   - TransparentFX

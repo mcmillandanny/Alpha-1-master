@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class enemyAttack : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class enemyAttack : MonoBehaviour {
     private Transform player;
     private Vector2 target;
     public GameObject bulletDeathRespawn;
+    DeathManager death;
+
 
 
 
@@ -18,6 +21,7 @@ public class enemyAttack : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
+        death = GameObject.FindGameObjectWithTag("Death Manager").GetComponent<DeathManager>();
     }
 
     // Update is called once per frame
@@ -37,8 +41,7 @@ public class enemyAttack : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             other.transform.position = bulletDeathRespawn.transform.position;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            DestroyEnemyAttack();
+            death.OnDeath();
         }
     }
 
@@ -46,4 +49,5 @@ public class enemyAttack : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
 }
