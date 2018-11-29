@@ -10,8 +10,10 @@ public class Boss : MonoBehaviour {
     public GameObject explosion;
     public Slider healthBar;
     public GameObject firewall;
-    private float timeBtwFireWalls;
-    public float startTimeBtwFireWalls;
+    private float timeBtwFireWallsFirst;
+    public float startTimeBtwFireWallsFirst;
+    private float timeBtwFireWallsSecond;
+    public float startTimeBtwFireWallsSecond;
     public GameObject leftPoint;
     public GameObject rightPoint;
 
@@ -19,7 +21,8 @@ public class Boss : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        timeBtwFireWalls = startTimeBtwFireWalls;
+        timeBtwFireWallsFirst = startTimeBtwFireWallsFirst;
+        timeBtwFireWallsSecond = startTimeBtwFireWallsSecond;
         leftPoint = GameObject.FindGameObjectWithTag("LeftPoint");
   
 
@@ -40,11 +43,11 @@ public class Boss : MonoBehaviour {
 
         if (health <= 25){
 
-            if (timeBtwFireWalls <= 0){
+            if (timeBtwFireWallsFirst <= 0){
                 Instantiate(firewall, transform.position, Quaternion.identity);
-                timeBtwFireWalls = startTimeBtwFireWalls;
+                timeBtwFireWallsFirst = startTimeBtwFireWallsFirst;
             } else {
-                timeBtwFireWalls -= Time.deltaTime;
+                timeBtwFireWallsFirst -= Time.deltaTime;
             }
         }
 
@@ -56,17 +59,17 @@ public class Boss : MonoBehaviour {
 
 
 
-        if (health <= 5)
+        if (health <= 15)
         {
 
-            if (timeBtwFireWalls <= 0)
+            if (timeBtwFireWallsSecond <= 0)
             {
                 Instantiate(firewall, transform.position, Quaternion.identity);
-                timeBtwFireWalls = startTimeBtwFireWalls;
+                timeBtwFireWallsSecond = startTimeBtwFireWallsSecond;
             }
             else
             {
-                timeBtwFireWalls -= Time.deltaTime;
+                timeBtwFireWallsSecond -= Time.deltaTime;
             }
         }
 
