@@ -608,6 +608,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4553032529593186, guid: 797023c810c4e405c88faddbaceade14,
     type: 2}
   m_PrefabInternal: {fileID: 235548604}
+--- !u!1001 &845546476
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253337766317632, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &998653032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1089,7 @@ GameObject:
   m_Layer: 0
   m_Name: Respawn Point
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

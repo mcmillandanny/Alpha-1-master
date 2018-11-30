@@ -3448,7 +3448,7 @@ MonoBehaviour:
   health: 40
   explosion: {fileID: 1859252235914456, guid: 892a188cdbaf3694c91d0e0a11f4f4f3, type: 2}
   healthBar: {fileID: 1639506408}
-  firewall: {fileID: 1316827406165346, guid: 8da43a58044689d49a6ee26532210af9, type: 2}
+  firewall: {fileID: 1745130430443312, guid: 8f6901e7e6f5c4b0d88c96b15eaefd0c, type: 2}
   startTimeBtwFireWallsFirst: 3.5
   startTimeBtwFireWallsSecond: 2.3
   leftPoint: {fileID: 1474952468}
