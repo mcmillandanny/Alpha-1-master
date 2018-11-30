@@ -52,7 +52,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -98,7 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  bulletDeathRespawn: {fileID: 0}
+  bulletDeathRespawn: {fileID: 1697618803589190, guid: 571fe2251608148298ecf29687d8aedd,
+    type: 2}
 --- !u!212 &212191959962979682
 SpriteRenderer:
   m_ObjectHideFlags: 1
