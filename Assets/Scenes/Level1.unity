@@ -2692,6 +2692,11 @@ Prefab:
       propertyPath: m_Name
       value: Add (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
@@ -12095,6 +12100,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
@@ -12199,6 +12209,11 @@ Prefab:
     - target: {fileID: 4697524773316110, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
@@ -15118,6 +15133,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
@@ -16449,6 +16469,11 @@ Prefab:
     - target: {fileID: 4697524773316110, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
@@ -25671,6 +25696,11 @@ Prefab:
         type: 2}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577201601354470, guid: 335a39faa461e4619b8340e9686c5de7,
+        type: 2}
+      propertyPath: startShootingDistance
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61767189872114424, guid: 335a39faa461e4619b8340e9686c5de7, type: 2}
