@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public float jump;
     private float moveInput;
+    
+
 
     private Rigidbody2D rb;
     public bool facingRight = true;
@@ -52,7 +54,7 @@ public class PlayerController : MonoBehaviour {
             Flip();
         }
     }
-
+  
     private void Update()
     {
         if(isGrounded == true){
@@ -70,6 +72,12 @@ public class PlayerController : MonoBehaviour {
             print("jump");
         } else if(Input.GetKeyDown(KeyCode.W) && extraJumps == 0 && isGrounded == true){
             rb.velocity = Vector2.up * jump;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quit the game");
+            Application.Quit();
         }
     }
 

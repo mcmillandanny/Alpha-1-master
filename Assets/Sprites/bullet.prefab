@@ -89,9 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f001278beb1f24d9be3cab8f32dfae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  lifeTime: 0.5
-  distance: 1
+  speed: 33
+  lifeTime: 0.7
+  distance: 1.7
   damage: 1
   bossLayer:
     serializedVersion: 2
