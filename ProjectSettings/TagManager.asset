@@ -11,6 +11,7 @@ TagManager:
   - Add
   - Kill Screen
   - Death Manager
+  - Start Shooting
   layers:
   - Default
   - TransparentFX
