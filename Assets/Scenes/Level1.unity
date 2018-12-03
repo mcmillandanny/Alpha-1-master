@@ -1070,8 +1070,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41201564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.958, y: -0.209, z: 0}
-  m_LocalScale: {x: 1, y: 5.4018555, z: 1}
+  m_LocalPosition: {x: -0.564, y: -0.165, z: 0}
+  m_LocalScale: {x: 1.2418, y: 6.708024, z: 1.2418}
   m_Children: []
   m_Father: {fileID: 891157283}
   m_RootOrder: 0
@@ -29204,7 +29204,7 @@ RectTransform:
   m_GameObject: {fileID: 1676497703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 1799719890}
   m_Father: {fileID: 917825511}
@@ -29228,7 +29228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.019607844, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.027450982, g: 0.09019608, b: 0.1254902, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -31878,7 +31878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -37705,7 +37705,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300018, guid: 06710b3d49a8841649c377e2856b9cee, type: 3}
-  m_Color: {r: 0.6792453, g: 0.17890505, b: 0.11854753, a: 1}
+  m_Color: {r: 0.7924528, g: 0.21758161, b: 0.115877524, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
