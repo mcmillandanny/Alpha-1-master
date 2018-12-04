@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public float jump;
     private float moveInput;
-    
+    public GameObject quit;
 
 
     private Rigidbody2D rb;
@@ -74,11 +74,7 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = Vector2.up * jump;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("Quit the game");
-            Application.Quit();
-        }
+     
     }
 
     void Flip() {
