@@ -16,6 +16,7 @@ public class Boss : MonoBehaviour {
     public float startTimeBtwFireWallsSecond;
     public GameObject leftPoint;
     public GameObject rightPoint;
+    public SpriteRenderer puddle;
 
 
     // Use this for initialization
@@ -24,7 +25,9 @@ public class Boss : MonoBehaviour {
         timeBtwFireWallsFirst = startTimeBtwFireWallsFirst;
         timeBtwFireWallsSecond = startTimeBtwFireWallsSecond;
         leftPoint = GameObject.FindGameObjectWithTag("LeftPoint");
-  
+        puddle.enabled = false;
+
+
 
     }
 
@@ -55,6 +58,7 @@ public class Boss : MonoBehaviour {
         if (health <= 20) {
             transform.localEulerAngles = new Vector3(0f, 0f, 0f);
             gameObject.transform.position = rightPoint.transform.position;
+            puddle.enabled = true;
         }
 
 
