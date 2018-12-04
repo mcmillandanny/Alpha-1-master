@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
     public PlayerController player;
     public GameObject particle;
     public float partileLifeTime = 2f;
+    private Vector2 bulletDirection;
 
 
     // Use this for initialization
@@ -21,7 +22,19 @@ public class Projectile : MonoBehaviour
         Invoke("DestroyProjectile", lifeTime);
         GameObject playerObj = GameObject.Find("Player");
         player = playerObj.GetComponent<PlayerController>();
- 
+
+        if (!player.facingRight)
+        {
+            Debug.Log("right");
+            bulletDirection = Vector2.right;
+        }
+
+        else
+        {
+            Debug.Log("left");
+            bulletDirection = -Vector2.right;
+        }
+
     }
 
     // Update is called once per frame
@@ -48,19 +61,8 @@ public class Projectile : MonoBehaviour
             DestroyProjectile();
         }
 
+        transform.Translate(bulletDirection * speed * Time.deltaTime);
 
-        if (!player.facingRight){
-            Debug.Log("right");
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-        }
-
-        else
-        {
-            Debug.Log("left");
-            transform.Translate(-Vector2.right * speed * Time.deltaTime);
-        }
-
-       
     }
 
     void DestroyProjectile()
