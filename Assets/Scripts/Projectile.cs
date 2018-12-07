@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
     public LayerMask bossLayer;
     public PlayerController player;
     public GameObject particle;
-    public float partileLifeTime = 2f;
+    public float particleLifeTime = 2f;
     private Vector2 bulletDirection;
 
 
@@ -67,6 +67,7 @@ public class Projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
+
         Destroy(gameObject);
     }
 }
