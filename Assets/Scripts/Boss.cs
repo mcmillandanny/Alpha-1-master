@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Boss : MonoBehaviour {
@@ -17,6 +18,7 @@ public class Boss : MonoBehaviour {
     public GameObject leftPoint;
     public GameObject rightPoint;
     public SpriteRenderer puddle;
+    public GameObject winScreen;
 
 
     // Use this for initialization
@@ -81,6 +83,7 @@ public class Boss : MonoBehaviour {
         if (health <= 0){
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            winScreen.SetActive(true);
         }
 
         

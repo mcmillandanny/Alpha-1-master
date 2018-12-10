@@ -91,14 +91,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 33
   lifeTime: 0.7
-  distance: 1.7
-  damage: 1
+  distance: 2
+  damage: 10
   bossLayer:
     serializedVersion: 2
     m_Bits: 256
   player: {fileID: 114839032007688060, guid: e0ae3f579bbe54ecaab6aaad38f7f423, type: 2}
   particle: {fileID: 0}
-  partileLifeTime: 2
+  particleLifeTime: 2
 --- !u!212 &212465870509109794
 SpriteRenderer:
   m_ObjectHideFlags: 1
